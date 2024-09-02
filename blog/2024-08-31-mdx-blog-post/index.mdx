@@ -1,0 +1,55 @@
+---
+slug: mdx-blog-post
+title: MDX Blog Post
+authors: [rajj]
+tags: [docusaurus, programming]
+---
+
+I keep forgetting how to write MDX blog posts, so I created this blog post as a reference.
+
+## Truncating the summary of a blog post
+Use a `<!--` `truncate` `-->` comment to limit blog post size in the list view for md.
+
+Use a `{/*` `truncate` `*/}` comment to limit blog post size in the list view for mdx.
+
+{/*truncate*/}
+
+## Blog post features
+
+Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
+
+```react
+:::tip
+Use the power of React to create interactive blog posts.
+:::
+```
+
+:::tip
+Use the power of React to create interactive blog posts.
+:::
+
+
+For example, use JSX to create an interactive button:
+```js
+<button onClick={() => alert('button clicked!')}>Click me!</button>
+```
+<button onClick={() => alert('button clicked!')}>Click me!</button>
+
+
+## Adding Media
+
+A blog post folder can be convenient to co-locate blog post images:
+
+```md
+![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
+```
+
+![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
+
+## Adding Tags
+
+The blog supports tags as well!
+
+```md
+tags: [docusaurus, mdx]
+```
